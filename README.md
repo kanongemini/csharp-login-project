@@ -17,7 +17,7 @@ Sistema de autenticacao completo desenvolvido em C# utilizando ASP.NET Core MVC.
 - Design responsivo e moderno
 - Validacao de formularios no servidor
 
-## Tecnologias Utilizadas
+## Tecno Utilizadas
 
 - **C#** - Linguagem de programacao
 - **ASP.NET Core MVC** - Framework web
