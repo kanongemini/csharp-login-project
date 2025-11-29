@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Login App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="/" class="logo">
+                <h2>Vitor Silva</h2>
+            </a>
+            <ul class="links">
+                <li><a href="/">Inicial</a></li>
+                <li><a href="/Home/Dashboard">Dashboard</a></li>
+                @if (ViewBag.IsLoggedIn == true)
+                {
+                    <li><a href="/Account/Logout">Sair</a></li>
+                }
+            </ul>
+            @if (ViewBag.IsLoggedIn != true)
+            {
+                <a href="/Account/Login" class="login-btn">LOG IN</a>
+            }
+            else
+            {
+                <span class="user-name">Ola, @ViewBag.UserName</span>
+            }
+        </nav>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+</body>
+</html>

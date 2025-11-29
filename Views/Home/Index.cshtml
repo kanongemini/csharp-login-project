@@ -1,0 +1,44 @@
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="hero">
+    <div class="hero-content">
+        <h1>Bem-vindo ao Sistema</h1>
+        <p>Sistema de Login e Cadastro desenvolvido em C# ASP.NET Core MVC</p>
+        @if (ViewBag.IsLoggedIn != true)
+        {
+            <div class="hero-buttons">
+                <a href="/Account/Login" class="btn btn-primary">Fazer Login</a>
+                <a href="/Account/Register" class="btn btn-secondary">Criar Conta</a>
+            </div>
+        }
+        else
+        {
+            <div class="hero-buttons">
+                <a href="/Home/Dashboard" class="btn btn-primary">Ir para Dashboard</a>
+            </div>
+        }
+    </div>
+</div>
+
+<section class="features">
+    <h2>Recursos</h2>
+    <div class="features-grid">
+        <div class="feature-card">
+            <span class="material-symbols-rounded">lock</span>
+            <h3>Autenticacao Segura</h3>
+            <p>Sistema de login com validacao de dados e sessao segura.</p>
+        </div>
+        <div class="feature-card">
+            <span class="material-symbols-rounded">person_add</span>
+            <h3>Cadastro de Usuarios</h3>
+            <p>Formulario de registro com validacao de campos.</p>
+        </div>
+        <div class="feature-card">
+            <span class="material-symbols-rounded">dashboard</span>
+            <h3>Dashboard</h3>
+            <p>Area restrita para usuarios autenticados.</p>
+        </div>
+    </div>
+</section>

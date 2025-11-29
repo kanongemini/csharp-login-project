@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="dashboard">
+    <div class="dashboard-header">
+        <h1>Dashboard</h1>
+        <p>Bem-vindo, <strong>@ViewBag.UserName</strong>!</p>
+    </div>
+    
+    <div class="dashboard-content">
+        <div class="dashboard-card">
+            <span class="material-symbols-rounded">check_circle</span>
+            <h3>Login Realizado</h3>
+            <p>Voce esta autenticado com sucesso no sistema.</p>
+        </div>
+        <div class="dashboard-card">
+            <span class="material-symbols-rounded">shield</span>
+            <h3>Area Protegida</h3>
+            <p>Esta pagina so pode ser acessada por usuarios logados.</p>
+        </div>
+        <div class="dashboard-card">
+            <span class="material-symbols-rounded">code</span>
+            <h3>Tecnologias</h3>
+            <p>C# | ASP.NET Core MVC | HTML | CSS</p>
+        </div>
+    </div>
+    
+    <div class="dashboard-actions">
+        <a href="/Account/Logout" class="btn btn-secondary">Sair do Sistema</a>
+    </div>
+</div>
