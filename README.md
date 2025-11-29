@@ -64,19 +64,6 @@ dotnet run
 
 5. Acesse no navegador: `https://localhost:5001`
 
-## Screenshots
-
-### Pagina Inicial
-![Home](screenshots/home.png)
-
-### Pagina de Login
-![Login](screenshots/login.png)
-
-### Pagina de Cadastro
-![Register](screenshots/register.png)
-
-### Dashboard
-![Dashboard](screenshots/dashboard.png)
 
 ## Autor
 
